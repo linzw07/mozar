@@ -1,0 +1,28 @@
+<div class="ma-body-wrapper">
+	<div class="ma-group">
+		<div class="container">
+			<div class="group-category">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-sms-6 col-smb-12">
+						<?php  echo $this->getLayout()->createBlock('newproduct/newproduct')->setTemplate('magentothem/newproduct/newproduct.phtml')->toHtml(); ?>
+					</div>
+					<div class="col-md-3 col-sm-6 col-sms-6 col-smb-12">
+						<?php  echo $this->getLayout()->createBlock('onsaleproduct/onsaleproduct')->setTemplate('magentothem/onsaleproduct/onsaleproduct.phtml')->toHtml(); ?>
+					</div>
+					<div class="col-md-3 col-sm-6 col-sms-6 col-smb-12">
+						<?php  echo $this->getLayout()->createBlock('mostviewedproduct/mostviewedproduct')->setTemplate('magentothem/mostviewedproduct/mostviewedproduct.phtml')->toHtml(); ?>
+					</div>
+					<div class="col-md-3 col-sm-6 col-sms-6 col-smb-12">
+						<?php  echo $this->getLayout()->createBlock('lastestproduct/lastestproduct')->setTemplate('magentothem/lastestproduct/lastestproduct.phtml')->toHtml(); ?>	
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="ma-blog">
+		<div class="container">
+			<?php  echo $this->getLayout()->createBlock('blog/menu_sidebar')->setTemplate('magentothem_blog/blog_slide.phtml')->toHtml(); ?>
+		</div>
+	</div>
+</div>
