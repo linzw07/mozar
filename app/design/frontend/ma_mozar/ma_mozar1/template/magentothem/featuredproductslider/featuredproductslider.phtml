@@ -1,6 +1,6 @@
 <?php if($this->getConfig('enabled')){ // start enable module?>
 	<?php $this->getProducts() ?>
-	<?php echo get_class($this);$_productCollection=$this->getProductCollection() ?>
+	<?php $_productCollection=$this->getProductCollection() ?>
 	<?php
 		$auto = $this->getConfig('auto');
 		$itemsDefault = $this->getConfig('itemsDefault');

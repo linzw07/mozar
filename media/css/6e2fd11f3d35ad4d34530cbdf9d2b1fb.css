@@ -9569,7 +9569,7 @@ fieldset       { border:0;line-height: 25px }
 legend         { display:none; }
 
 /* Table */
-table          { border:0; /*border-collapse:collapse;*/ border-spacing:0; empty-cells:show; font-size:100%; }
+table          { border:1px solid black; /*border-collapse:collapse;*/ border-spacing:0; empty-cells:show; font-size:100%; }
 caption,th,td  { vertical-align:top; text-align:left; font-weight:normal; }
 
 /* Content */
@@ -9901,7 +9901,7 @@ p.required  { font-size:11px; text-align:right; color:#EB340A; }
 .data-table tfoot strong  { font-size:16px; }
 
 .data-table tbody th,
-.data-table tbody td  { border-bottom:1px solid #f2f2f2; }
+.data-table tbody td  { /*border-bottom:1px solid #f2f2f2;*/ }
 /* Bundle products tables */
 .data-table tbody.odd tr  { background:#f8f7f5 !important; }
 .data-table tbody.even tr  { background:#f6f6f6 !important; }
@@ -11029,7 +11029,7 @@ color: #99989e;
 .send-friend .buttons-set .limit  { float:right; margin:0 7px 0 0; font-size:11px; line-height:21px; }
 /* ======================================================================================= */
 /* Content Styles ================================================================= */
-.product-name a  {/*text-transform: uppercase;*/font-size: 14px;}
+.product-name a  {text-transform: uppercase;font-size: 14px;}
 /* Product Tags */
 .tags-list  { display:block; font-size:1.2em; border:1px solid #c1c4bc; background:#f8f7f5;padding: 5px;}
 .tags-list li  { display:inline !important; margin:0 3px 0 0; }
@@ -12210,6 +12210,16 @@ transform: scale(1.05);
 -ms-transition: all 300ms ease-in-out;
 -o-transition: all 300ms ease-in-out;
 transition: all 300ms ease-in-out;
+}
+.banner-home .banner-home-self{position: relative;display: block;overflow: hidden;text-align: center;}
+.banner-home .banner-home-self .box-title,.banner-home .banner-box .box-title{font-size:20px; margin:15px 0px; color:black;}
+.banner-home .banner-home-self .box-desc,.banner-home .banner-box .box-desc{font-size:17px;margin-left: 6%; margin-right:6%; line-height:24px; color:black;}
+.banner-home .banner-home-self .box-shopnow{color:#77A22F;font-size:21px; margin: 15px 6%;}
+.banner-home .banner-home-self .box-shopnow:hover{color:red;font-size:21px; margin: 15px 6%;}
+.banner-home .banner-box .box-readmore{color:#77A22F;font-size:21px; margin: 15px 6%; }
+.banner-home .banner-box .box-readmore:hover{color:red;font-size:21px; margin: 15px 6%;}
+@media (max-width: 680px) {
+	.banner-home .banner-home-self .box-desc,.banner-home .banner-box .box-desc{    margin-left: 16%;margin-right: 16%;}
 }
 .banner-home .col-sm-7 .row{margin-bottom: 30px;}
 .banner-home .col-sm-7 .row:last-child{margin-bottom: 0}
