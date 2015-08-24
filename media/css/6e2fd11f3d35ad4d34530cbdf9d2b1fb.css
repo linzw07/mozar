@@ -10528,7 +10528,7 @@ padding-top:18px;
 .block-related .block-content li.item {
 margin: 0 0 20px; 
 }
-.block-related .product-name a {text-transform: capitalize;}
+.block-related .product-name a {/*text-transform: capitalize;*/}
 .block-related .block-content {padding: 0;margin: 20px 0 0}
 .block-cart .mini-products-list .product-details .product-name,
 .block-cart .mini-products-list .product-details .nobr small  { word-wrap:break-word; ;width:auto;margin-right: 20px;}
@@ -11029,7 +11029,7 @@ color: #99989e;
 .send-friend .buttons-set .limit  { float:right; margin:0 7px 0 0; font-size:11px; line-height:21px; }
 /* ======================================================================================= */
 /* Content Styles ================================================================= */
-.product-name a  {text-transform: uppercase;font-size: 14px;}
+.product-name a  {/*text-transform: uppercase;*/font-size: 14px;}
 /* Product Tags */
 .tags-list  { display:block; font-size:1.2em; border:1px solid #c1c4bc; background:#f8f7f5;padding: 5px;}
 .tags-list li  { display:inline !important; margin:0 3px 0 0; }
