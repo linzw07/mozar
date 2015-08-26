@@ -12742,169 +12742,6 @@ border: none;
 	background: #000;
 	background: rgba(0, 0, 0, .8);
 }
-/* 
- * 	Core Owl Carousel CSS File
- *	v1.3.3
- */
-
-/* clearfix */
-.owl-carousel .owl-wrapper:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
-}
-/* display none until init */
-.owl-carousel{
-	display: none;
-	position: relative;
-	width: 100%;
-	-ms-touch-action: pan-y;
-}
-.owl-carousel .owl-wrapper{
-	display: none;
-	position: relative;
-	-webkit-transform: translate3d(0px, 0px, 0px);
-}
-.owl-carousel .owl-wrapper-outer{
-	overflow: hidden;
-	position: relative;
-	width: 100%;
-}
-.owl-carousel .owl-wrapper-outer.autoHeight{
-	-webkit-transition: height 500ms ease-in-out;
-	-moz-transition: height 500ms ease-in-out;
-	-ms-transition: height 500ms ease-in-out;
-	-o-transition: height 500ms ease-in-out;
-	transition: height 500ms ease-in-out;
-}
-	
-.owl-carousel .owl-item{
-	float: left;
-}
-.owl-controls .owl-page,
-.owl-controls .owl-buttons div{
-	cursor: pointer;
-}
-.owl-controls {
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-/* mouse grab icon */
-.grabbing { 
-    cursor:url(http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/magentothem/css/images/grabbing.png) 8 8, move;
-}
-
-/* fix */
-.owl-carousel  .owl-wrapper,
-.owl-carousel  .owl-item{
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility:    hidden;
-	-ms-backface-visibility:     hidden;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-}
-
-/****************************************/
-/*
-* 	Owl Carousel Owl Demo Theme 
-*	v1.3.3
-*/
-
-.owl-theme .owl-controls{opacity: 0;}
-.owl-theme:hover .owl-controls{opacity: 1}
-/* Styling Next and Prev buttons */
-
-.owl-theme .owl-controls .owl-buttons div{
-	display: inline-block;
-	zoom: 1;
-	*display: inline;/*IE7 life-saver */
-	font-size:0;
-	width: 40px;
-	height: 40px;
-	text-align: center;
-	line-height: 40px;
-	border: 2px solid #e1e1e0;
-	background: #fff;
-	position: absolute;
-	left: 0;
-	top: 30%;
-}
-.owl-theme .owl-controls .owl-buttons div.owl-next{left: auto;right: 0;}
-.owl-theme .owl-controls .owl-buttons div:before{
-	  display: block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 38px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\f104";
-  font-size: 24px;
-}
-.owl-theme .owl-controls .owl-buttons .owl-next:before {content: "\f105";}
-
-/* Clickable class fix problem with hover on touch devices */
-/* Use it for non-touch hover action */
-.owl-theme .owl-controls.clickable .owl-buttons div:hover{
-color: #e03550;
-border-color: #e03550;
-}
-
-/* Styling Pagination*/
-
-.owl-theme .owl-controls .owl-page{
-	display: inline-block;
-	zoom: 1;
-	*display: inline;/*IE7 life-saver */
-}
-.owl-theme .owl-controls .owl-page span{
-	display: block;
-	width: 12px;
-	height: 12px;
-	margin: 5px 7px;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	background: #869791;
-}
-
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
-	opacity: 1;
-}
-
-/* If PaginationNumbers is true */
-
-.owl-theme .owl-controls .owl-page span.owl-numbers{
-	height: auto;
-	width: auto;
-	color: #FFF;
-	padding: 2px 10px;
-	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-}
-
-/* preloading images */
-.owl-item.loading{
-	min-height: 150px;
-	background: url(http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/magentothem/css/images/AjaxLoader.gif) no-repeat center center
-}
-
-
 /*===custommenu==============*/ 
 
 .pt_custommenu {
@@ -14317,389 +14154,504 @@ border:none;
 }
 
 h1,h2,h3,h4,h5,h6{font-family:Lato;font-weight:400;color:#232323}body{color:#69686c;background-image:url("http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/images/pattern/pattern9.png")}a{color:#69686c}a:hover{color:#e03550}
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
 
-/* Browser Resets */
-.ma-banner7-container .flex-container a:active,
-.ma-banner7-container .flexslider a:active,
-.ma-banner7-container .flex-container a:focus,
-.ma-banner7-container .flexslider a:focus  {outline: none;}
-.ma-banner7-container .slides,
-.ma-banner7-container .flex-control-nav,
-.ma-banner7-container .flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
-
-/* FlexSlider Necessary Styles
-*********************************/ 
-.ma-banner7-container .flexslider {margin: 0; padding: 0;}
-.ma-banner7-container .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden; position: relative; } /* Hide the slides before the JS is loaded. Avoids image jumping */
-.ma-banner7-container .flexslider .slides img {width: 100%; display: block;}
-.ma-banner7-container .flex-pauseplay span {text-transform: capitalize;}
-
-/* Clearfix for the .slides element */
-.ma-banner7-container .slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
-html[xmlns] .ma-banner7-container .slides {display: block;} 
-* html .ma-banner7-container .slides {height: 1%;}
-
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
-.no-js .ma-banner7-container .slides > li:first-child {display: block;}
-
-
-/* FlexSlider Default Theme
-*********************************/
-.ma-banner7-container .flexslider {padding: 0; position: relative; zoom: 1;}
-.ma-banner7-container .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
-.ma-banner7-container .loading .flex-viewport {max-height: 300px;}
-.ma-banner7-container .flexslider .slides {zoom: 1;}
-
-.ma-banner7-container .carousel li {margin-right: 5px}
-
-
-/* Direction Nav */
-.ma-banner7-container .flex-direction-nav {*height: 0;}
-.ma-banner7-container .flex-direction-nav a,
-.nivo-directionNav a { width: 40px; height: 40px; margin: -45px 0 0; display: block; position: absolute; top: 50%; cursor: pointer;  z-index: 9;border: 1px solid #e1e1e0;font-size: 0;color: transparent;}
-.ma-banner7-container .flex-direction-nav a:after,
-.nivo-directionNav a:after{
-content: "\f104";
-font-family: FontAwesome;
-display: inline-block;
-font-size: 22px;
-color: #e1e1e0;
-width: 40px;
-height: 40px;
-text-align: center;
-line-height: 40px;
-position: absolute;
-left: 0;
-top: 0;   
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
 }
-.ma-banner7-container .flex-direction-nav .flex-next:after,
-.nivo-directionNav a.nivo-nextNav:after{content: "\f105";}
-.ma-banner7-container .flex-direction-nav a:hover, .nivo-directionNav a:hover,.ma-banner7-container .flex-direction-nav a:hover:after, .nivo-directionNav a:hover:after{border-color: #e03550;color: #e03550}
-.ma-banner7-container .flex-direction-nav .flex-next,
-.nivo-directionNav a.nivo-nextNav { right: 5%; }
-.ma-banner7-container .flex-direction-nav .flex-prev,
-.nivo-directionNav a.nivo-prevNav { left: 5%;}
-.ma-banner7-container .flexslider:hover .flex-next:hover, .ma-banner7-container .flexslider:hover .flex-prev:hover {opacity: 1;}
-.ma-banner7-container .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
-ul.controls,.nivo-directionNav{display: none}
-#sequence-theme:hover ul.controls,.ma-banner7-container :hover .nivo-directionNav{display: block;}
-/* Control Nav */
-.ma-banner7-container .flex-control-nav,
-.nivo-controlNav {position: absolute; bottom:10px; text-align: center;right:0;left: 0}
-.ma-banner7-container .flex-control-nav li { margin: 0 6px; display: inline-block; zoom: 1; *display: inline; }
-.ma-banner7-container .flex-control-paging li a:hover,
-.ma-banner7-container .flex-control-paging li a.flex-active,
-.nivo-controlNav a:hover,
-.nivo-controlNav a.active {cursor: pointer; width: 10px;line-height: 10px;height: 10px;background: #e03550}
-.ma-banner7-container .flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
-.ma-banner7-container .flex-control-thumbs li {width: 25%; float: left; margin: 0;}
-.ma-banner7-container .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
-.ma-banner7-container .flex-control-thumbs img:hover {opacity: 1;}
-.ma-banner7-container .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
-.ma-nivoslider {
-    overflow: hidden;
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
 }
-.nivoslider {
-position: relative;
-overflow: hidden;
-height: auto;
-width: 100%; 
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
 }
-.nivoslider img {
-position: absolute;
-top: 0;
-left: 0;
-display: none;
-}
-.nivo-controlNav {
-    text-align: center;
-}
-.nivo-controlNav a {
-border: 0 none;
-display: inline-block;
-height:10px;
-margin: 0 3px;
-text-indent: -9999px;
-width:10px;
-line-height: 8px;
-cursor: pointer;
-position: relative;
-z-index: 9;
-background-color: #ffffff;
-border-radius: 100%;
-}
-.banner7-caption {
-position: absolute;
-left:0; 
-top:0;  
-width: 100%;
-background: none;
-color: #fff;
-font-size: 16px;
-z-index: 999;
-}
-.ma-banner7-container .ma-loading {
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    z-index: 99;
-    background: url(http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/magentothem/images/loader.gif) no-repeat ;
-    top: 50%;
-    left: 50%;
-    margin: -8px 0 0 -8px;
-}
-/* The Nivo Slider styles */
-.nivoSlider {
-    position:relative;
-    width:100%;
-    height:auto;
-    overflow: hidden;
-}
-.nivoSlider img {
-    position:absolute;
-    top:0px;
-    left:0px;
-    max-width: none;
-}
-.nivo-main-image {
-    display: block !important;
-    position: relative !important; 
-    width: 100% !important;
-}
-
-/* If an image is wrapped in a link */
-.nivoSlider a.nivo-imageLink {
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height:100%;
-    border:0;
-    padding:0;
-    margin:0;
-    z-index:6;
-    display:none;
-    background:white; 
-    filter:alpha(opacity=0); 
-    opacity:0;
-}
-/* The slices and boxes in the Slider */
-.nivo-slice {
-    display:block;
-    position:absolute;
-    z-index:5;
-    height:100%;
-    top:0;
-}
-.nivo-box {
-    display:block;
-    position:absolute;
-    z-index:5;
-    overflow:hidden;
-}
-.nivo-box img { display:block; }
-
-.nivo-caption {
-  position:absolute;
-    left:0; 
-    top:0;  
-    color:#fff;
-    width:100%;
-    height: 100%;
-    z-index:8;
-}
-.nivo-html-caption {
-    display: none;
-}
-.nivo-main-image {
-    display: block !important;
-    position: relative !important; 
-    width: 100% !important;
-}
-
-/* If an image is wrapped in a link */
-.nivoSlider a.nivo-imageLink {
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height:100%;
-    border:0;
-    padding:0;
-    margin:0;
-    z-index:6;
-    display:none;
-    background:white; 
-    filter:alpha(opacity=0); 
-    opacity:0;
-}
-/* The slices and boxes in the Slider */
-.nivo-slice {
-    display:block;
-    position:absolute;
-    z-index:5;
-    height:100%;
-    top:0;
-}
-.nivo-box {
-    display:block;
-    position:absolute;
-    z-index:5;
-    overflow:hidden;
-}
-
-
-.nivo-caption {
-  position:absolute;
-    left:0; 
-    top:0;  
-    color:#fff;
-    width:100%;
-    z-index:8;
-    height: 100%;
-}
-.nivo-html-caption {
-    display: none;
-}
-@-webkit-keyframes myfirst {
-  from {width: 0;}
-  to {width: 100%;}
- }
- @keyframes myfirst {
-  from {width: 0;}
-  to {width: 100%;}
- }
- .timethai.pos_hover{
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-  
- }
- .ma-banner7-container{
-    position :relative;
- }
-
-/*===================================================Content-banner7===========================================================*/
-.nivoSlider {
-	position:relative;
-	width:100%;
-	height:auto;
+.owl-carousel .owl-wrapper-outer{
 	overflow: hidden;
+	position: relative;
+	width: 100%;
 }
-.banner7-content{ height: 100%; position: relative;}
-.bannerslideshow{position: absolute;top: 20%;right:40%;text-align:center;max-width: 80%;margin: auto}
-.banner7-content h1,
-.banner7-content h2,
-.banner7-content h3{ text-transform: uppercase; }
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
-.banner7-content h1{
-	-webkit-animation: bounceInLeft 1500ms ease-in-out;
-    -moz-animation: bounceInLeft 1500ms ease-in-out;
-    -ms-animation: bounceInLeft 1500ms ease-in-out;
-    animation: bounceInLeft 1500ms ease-in-out;
-margin-bottom: 10px;
-font-size:30px;
-text-transform: uppercase;
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/magentothem/css/images/grabbing.png) 8 8, move;
 }
-.banner7-content h2{
-	-webkit-animation: bounceInLeft 2000ms ease-in-out;
-    -moz-animation: bounceInLeft 2000ms ease-in-out;
-    -ms-animation: bounceInLeft 2000ms ease-in-out;
-    animation: bounceInLeft 2000ms ease-in-out;
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+/****************************************/
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls{opacity: 0;}
+.owl-theme:hover .owl-controls{opacity: 1}
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	font-size:0;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border: 2px solid #e1e1e0;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 30%;
+}
+.owl-theme .owl-controls .owl-buttons div.owl-next{left: auto;right: 0;}
+.owl-theme .owl-controls .owl-buttons div:before{
+	  display: block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 38px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f104";
+  font-size: 24px;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next:before {content: "\f105";}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+color: #e03550;
+border-color: #e03550;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/magentothem/css/images/AjaxLoader.gif) no-repeat center center
+}
+
+
+
+/* This is the moving lens square underneath the mouse pointer. */
+.cloud-zoom-lens {
+	border: 1px solid #ccc;
+	margin:-1px;	/* Set this to minus the border thickness. */
+	background-color:#fff;	
+	cursor:move;
+}
+
+/* This is for the title text. */
+.cloud-zoom-title {
+	font-family:Arial, Helvetica, sans-serif;
+	position:absolute !important;
+	background-color:#000;
+	color:#fff;
+	padding:3px;
+	width:100%;
+	text-align:center;	
+	font-weight:bold;
+	font-size:10px;
+	top:0px;
+}
+
+/* This is the zoom window. */
+.cloud-zoom-big {
+	border:2px solid #ccc;
+	overflow:hidden;
+}
+
+/* This is the loading message. */
+.cloud-zoom-loading {
+	color:white;	
+	background:#222;
+	padding:3px;
+	border:1px solid #000;
+	display:none;
+}
+.product-view .product-img-box .product-image-zoom
+	{		
+		border: 2px solid #CCCCCC;
+	}
+
+.ma-a-lighbox
+	{
+		display:none;
+	}
+/*##########--------------##########*/
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 1100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{/* background: url(http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/magentothem/images/loading.gif) 50% 50% no-repeat;*/ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/magentothem/images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/magentothem/images/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif;  background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 80%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}
+/*
+#imageData #bottomNavClose{ background:url(http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/magentothem/images/closelabel.gif) no-repeat 0 0; width: 66px; height:22px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+*/
+#overlay{ position: absolute; top: 0; left: 0; z-index: 1100; width: 100%; height: 500px; background-color: #000; }
+
+.ma-thumbnail-hor {
+	float:left;
+	width:267px;
+}
+.ma-thumbnail-slider-title {}
+.ma-thumbnail-slider-title h2 {
+	padding:5px;
+}
+.ma-thumbnail-slider {}
+.thumb-slider .jcarousel-container {
+    -moz-border-radius: 10px;
+    background: #fff;
+    border: 2px solid #000;
+}
+
+.thumb-slider .jcarousel-container-horizontal {
+    width: 1000px;
+    padding: 10px 0px;
+	padding-left:40px;
+	margin:0 auto;
+	margin-top:80px
+}
+
+.thumb-slider .jcarousel-container-vertical {
+    width: 75px;
+    height: 245px;
+    padding: 0px 0px;
+}
+
+.thumb-slider .jcarousel-clip-horizontal {
+    width:  960px;
+    height: 154px;
+}
+
+.thumb-slider .jcarousel-clip-vertical {
+    width:  240px;
+    height: 245px;
+}
+
+.thumb-slider .jcarousel-item {
+	float: left;
+    list-style: none outside none;
+	text-align:center;
+}
+
+.thumb-slider .jcarousel-item-horizontal {
+    margin-right: 0px;
+}
+.product-view .product-img-box .more-views li.jcarousel-item-horizontal {
+	margin: 0 0 0 7px;
+}
+.thumb-slider .jcarousel-item-vertical {
     margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 50px;
-}
-.banner7-content h3{
-	-webkit-animation: bounceInLeft 2500ms ease-in-out;
-    -moz-animation: bounceInLeft 2500ms ease-in-out;
-    -ms-animation: bounceInLeft 2500ms ease-in-out;
-    animation: bounceInLeft 2500ms ease-in-out;
-       text-transform: none;
-       font-size:20px;
-       line-height:1.8;
-       margin-bottom: 10px
-}
-.banner7-content .banner7-readmore{
--webkit-animation: bounceInLeft 3000ms ease-in-out;
--moz-animation: bounceInLeft 3000ms ease-in-out;
--ms-animation: bounceInLeft 3000ms ease-in-out;
-animation: bounceInLeft 3000ms ease-in-out;	
-display: inline-block;
-clear: both;
-}
-.banner7-content .banner7-readmore a{
-background: #222222;
-font-size: 12px;
-padding: 10px 30px;
-text-transform: uppercase;
-font-weight: bold;
-display: block;
-color: #fff;
-font-family: 'Lato', sans-serif
-}
-.banner7-content .banner7-readmore a:hover{background-color:#e03550;color: #fff}
-.banner7-content .banner7-des{
-	-webkit-animation: bounceInLeft 2000ms ease-in-out;
-    -moz-animation: bounceInLeft 2000ms ease-in-out;
-    -ms-animation: bounceInLeft 2000ms ease-in-out;
-    animation: bounceInLeft 2000ms ease-in-out;
-}
-.banner7-content img.img1 {
-	position:absolute;
-	bottom:0px;
-	left:0px;
-	max-width: none;
-	-webkit-animation: fadeInRight 1500ms ease-in-out;
-    -moz-animation: fadeInRight 1500ms ease-in-out;
-    -ms-animation: fadeInRight 1500ms ease-in-out;
-    animation: fadeInRight 1500ms ease-in-out;
-}
-.banner7-content img.img2 {
-	position:absolute;
-	bottom:0px;
-	right:0px;
-	max-width: none;
-	-webkit-animation: bounceInLeft 1500ms ease-in-out;
-    -moz-animation: bounceInLeft 1500ms ease-in-out;
-    -ms-animation: bounceInLeft 1500ms ease-in-out;
-    animation: bounceInLeft 1500ms ease-in-out;
 }
 
-.slider-2 h1{
-
+.thumb-slider .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
 }
-.slider-2 h2{
-
-}
-.slider-2 h3{
-
-}
-.slider-2 .banner7-des{
-
-}
-.slider-2 img.img1 {
-	position:absolute;
-	bottom:0px;
-	left:0px;
-	max-width: none;
-
-}
-.slider-2 img.img2 {
-	position:absolute;
-	bottom:0px;
-	right:0px;
-	max-width: none;
-
-}
-@media(max-width:1199px){
-.bannerslideshow{left:0;right: 0}
-.banner7-content h2{font-size: 40px}
+.thumb-slider .product-image {
+	display:inline-block;
+	margin:0 0 8px;
 }
 
-@media(max-width:992px){
-.bannerslideshow{top: 10%}
-.banner7-content h1 span{font-size: 1.4em}
-.banner7-content h3{font-size: 1em}
+/**
+ *  Horizontal Buttons
+ */
+.ma-thumbnail-slider .jcarousel-next-horizontal {
+    position: absolute;
+    top: 20%;
+    right: -30px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/magentothem/images/next-horizontal.png) no-repeat 0 0;
 }
+
+.ma-thumbnail-slider .jcarousel-next-horizontal:hover {
+    background-position: -32px 0;
+}
+
+.ma-thumbnail-slider .jcarousel-next-horizontal:active {
+    background-position: -64px 0;
+}
+
+.ma-thumbnail-slider .jcarousel-next-disabled-horizontal,
+.ma-thumbnail-slider .jcarousel-next-disabled-horizontal:hover,
+.ma-thumbnail-slider .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0;
+}
+
+.ma-thumbnail-slider .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 20%;
+    left: -30px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/magentothem/images/prev-horizontal.png) no-repeat 0 0;
+}
+
+.ma-thumbnail-slider .jcarousel-prev-horizontal:hover {
+    background-position: -32px 0;
+}
+
+.ma-thumbnail-slider .jcarousel-prev-horizontal:active {
+    background-position: -64px 0;
+}
+
+.ma-thumbnail-slider .jcarousel-prev-disabled-horizontal,
+.ma-thumbnail-slider .jcarousel-prev-disabled-horizontal:hover,
+.ma-thumbnail-slider .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0;
+}
+
+
+/**
+ * This <div> element is wrapped by jCarousel around the list
+ * and has the classname "jcarousel-container".
+ */
+.ma-thumbnail-slider .jcarousel-container {
+    position: relative;
+}
+.ma-thumbnail-slider .jcarousel-clip {
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+.ma-thumbnail-slider .jcarousel-list {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+/**
+ * The buttons are added dynamically by jCarousel before
+ * the <ul> list (inside the <div> described above) and
+ * have the classnames "jcarousel-next" and "jcarousel-prev".
+ */
+
+.ma-thumbnail-slider .jcarousel-next {
+    z-index: 3;
+    display: none;
+}
+.ma-thumbnail-slider .jcarousel-prev {
+    z-index: 3;
+    display: none;
+}
+
+.ma-thumbnail-vert {
+	float: left;
+}
+#ma-thumb-vert-slider {
+	height: 5555px !important;
+}
+
+.ma-thumbnail-vert  .jcarousel-container-vertical {
+    width: 62px;
+    padding: 35px 10px;
+}
+.ma-thumbnail-vert  .jcarousel-clip {
+    overflow: hidden;
+}
+.ma-thumbnail-vert  .jcarousel-clip-vertical {
+    width: 60px;
+    height: 267px;
+}
+.ma-thumbnail-vert  .jcarousel-item {
+    width: 60px;
+    height: 60px;
+    margin-left: 0 !important;
+}
+.ma-thumbnail-vert .product-image {
+	float: left;
+}
+.ma-thumbnail-vert .product-name  {
+	margin: 0 0 5px;
+}
+
+.ma-thumbnail-vert  .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+.ma-thumbnail-vert .block-content li.item {
+	padding: 0;
+}
+
+/**
+ *  Vertical Buttons
+ */
+.ma-thumbnail-vert .jcarousel-next-vertical, 
+.ma-thumbnail-vert  .jcarousel-prev-vertical {
+    background: transparent url(http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/magentothem/images/prev-vertical.png) no-repeat 0 0;
+	width: 30px;
+	height: 32px;
+	position: absolute;
+	left: 32%;
+	cursor: pointer;
+}
+.ma-thumbnail-vert .jcarousel-next-vertical {
+    background: transparent url(http://localhost:8888/mozar/skin/frontend/ma_mozar/ma_mozar1/magentothem/images/next-vertical.png) no-repeat 0 0;
+	width: 30px;
+	height: 32px;
+	position: absolute;
+	left: 30%;
+	cursor: pointer;
+}
+
+.ma-thumbnail-vert  .jcarousel-next-vertical:hover,
+.ma-thumbnail-vert  .jcarousel-next-vertical:focus {
+    background-position: 0 -32px;
+}
+.ma-thumbnail-vert  .jcarousel-prev-vertical {
+    top: 5px;
+}
+.ma-thumbnail-vert  .jcarousel-prev-vertical:hover,
+.ma-thumbnail-vert  .jcarousel-prev-vertical:focus {
+    background-position: 0 -32px;
+}
+
+.product-view .product-img-box .more-views li a {
+    float: left;
+    height: auto;
+    width: auto;
+}
+
+//**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.ma-thumbnail-container   .bx-wrapper {
+	position: relative;
+	margin: 0 auto 60px;
+	padding: 0;
+	*zoom: 1;
+}
+
+.ma-thumbnail-container   .bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+
