@@ -2659,7 +2659,7 @@ transition: all 0.3s ease-in-out;
 .page-not-found address a:hover {text-decoration: underline;}
 
 #home-promotion{
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0px 20px 0px;
 }
 @media (max-width:1200px) {
 	#home-promotion{
