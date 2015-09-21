@@ -12,7 +12,7 @@ margin:0 auto;
 padding:15px 0px;
 text-decoration: none;
 display:block;
-text-transform:uppercase;
+/*text-transform:uppercase;*/
 font-weight: 600;
 font-family: Lato;
 color: #232323;
@@ -22,7 +22,7 @@ font-size: 13px;
 .pt_custommenu div.pt_menu .parentMenu span.block-title span{
 display: block;
 border-left: 1px solid #e1e1e1;
-padding: 5px 20px;
+padding: 5px 18px;
 }
 #pt_menu_home .parentMenu a span{border: none;}
 .pt_custommenu div.pt_menu.act a,
